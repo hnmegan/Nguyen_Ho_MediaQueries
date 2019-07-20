@@ -7,26 +7,40 @@ body
 .container
 {
 	margin: 0 auto;
-	background-color: #efefef;
+	background-color: #036c65;
 	max-width: 1200px;
 }
 
 .box
 {
-	background-color: #8ea86e;
-	color: #fff;
+	background-color: #aed3cb;
+	color: #ff406c;
 	border-radius: 5px;
 	padding: 20px;
 	text-align: center;
 	margin: 10px;
 }
 
+#mainHeader
+{
+	display: flex;
+	flex-direction: row;
+
+}
+
 .logo
 {
-	width: 100px;
-	margin-left: auto;
+	width: 50px;
+	margin-left: 10px;
 	margin-right: auto;
 }
+
+.headerRight
+{
+	display: flex;
+	flex-direction: row;
+}
+
 
 @media screen and (min-width: 600px)
 {
@@ -35,15 +49,38 @@ body
 		display: flex;
 		flex-direction: row;
 	}
+
+	.headerRight
+{
+	display: flex;
+	flex-direction: column;
+	height: 30px;
+	align-items: flex-end;
+
+}
+
+	.Hero
+	{
+		height: 250px;
+		margin: 0;
+	}
 	
 	.box
 	{
 		flex: 1 1 auto;
 	}
+
+	.social
+	{
+		height: 10px;
+		width: 50px;
+	}
 	
 	.nav
 	{
-		flex: 0 1 600px;
+
+		width: 600px;
+		height: 10px;
 	}
 	
 	.logo
@@ -51,11 +88,29 @@ body
 		order: -1;
 		flex: 0 1 220px;
 		margin-left: 10px;
+		height: 80px;
+		width: 80px;
 	}
-	
-	#products
+
+	.notification
 	{
 		display: flex;
 		flex-direction: row;
+		margin-right: -10px;
+		margin-left: -10px;
+	}
+
+	
+	#Contact
+	{
+		display: flex;
+		flex-direction: row;
+		height: 400px;
+		margin: 40px;
+	}
+
+	.footer
+	{
+		height: 150px;
 	}
 }
