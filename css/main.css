@@ -14,8 +14,7 @@ body
 .box
 {
 	background-color: #aed3cb;
-	color: #ff406c;
-	border-radius: 5px;
+	color: #036c65;
 	padding: 20px;
 	text-align: center;
 	margin: 10px;
@@ -25,7 +24,6 @@ body
 {
 	display: flex;
 	flex-direction: row;
-
 }
 
 .logo
@@ -41,25 +39,63 @@ body
 	flex-direction: row;
 }
 
+.hero
+{
+	height: 150px;
+}
+
+.contactDetails, .contactForm
+{
+	height: 250px;
+}
+
+.footer
+{
+	margin: 0;
+	height: 80px;
+}
 
 @media screen and (min-width: 600px)
-{
+{	
 	#mainHeader
 	{
 		display: flex;
 		flex-direction: row;
 	}
 
+	.logo
+	{
+		order: -1;
+		flex: 1 1 80px;
+		margin-left: 10px;
+		width: 8%;
+		height: 80px;
+	}
+	
 	.headerRight
-{
-	display: flex;
-	flex-direction: column;
-	height: 30px;
-	align-items: flex-end;
+	{
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		align-items: flex-end;
+		flex: 1 1 80%;
+	}
 
-}
-
-	.Hero
+	.social
+	{
+		float: right;
+		width: 50px;
+		height: 10px;
+	}
+	
+	.nav
+	{
+		flex: 0 1 200px;
+		height: 10px;
+		width: 70%;
+	}
+	
+	.hero
 	{
 		height: 250px;
 		margin: 0;
@@ -70,47 +106,29 @@ body
 		flex: 1 1 auto;
 	}
 
-	.social
-	{
-		height: 10px;
-		width: 50px;
-	}
-	
-	.nav
-	{
-
-		width: 600px;
-		height: 10px;
-	}
-	
-	.logo
-	{
-		order: -1;
-		flex: 0 1 220px;
-		margin-left: 10px;
-		height: 80px;
-		width: 80px;
-	}
-
 	.notification
 	{
 		display: flex;
 		flex-direction: row;
-		margin-right: -10px;
-		margin-left: -10px;
+		margin: 0 -10px;
 	}
-
 	
-	#Contact
+	#contact
 	{
 		display: flex;
 		flex-direction: row;
 		height: 400px;
 		margin: 40px;
 	}
+	
+	.contactDetails, .contactForm
+	{
+	height: 340px;
+	}
 
 	.footer
 	{
 		height: 150px;
+		margin: 0;
 	}
 }
